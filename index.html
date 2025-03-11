@@ -8,6 +8,7 @@
   <body>
     <header>
       <nav>
+        <div class="logo">John Smith</div>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#socials">Socials</a></li>
@@ -17,15 +18,20 @@
         </ul>
       </nav>
       <h1>Hi! I'm John Smith</h1>
-      <span>a web developer</span>
+      <p>a web developer</p>
     </header>
     <section id="about">
-      <img src="foto-diri.jpg" alt="picture of person" class="foto-diri" />
       <h2>About Me</h2>
+      <img
+        src="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"
+        alt="John Smith, headshot, smiling, wearing a blue shirt"
+        class="foto-diri"
+        width="80"
+        height="80"
+      />
       <p>
-        Hi! I'm John. A passionate Frontend Developer with 3+ years of
-        experience in building high-performance, scalable, and responsive web
-        solutions.
+        I'm a passionate Frontend Developer with 3+ years of experience in
+        building high-performance, scalable, and responsive web solutions.
       </p>
       <button><a href="./index.html">Hire Me</a></button>
     </section>
@@ -74,30 +80,51 @@
     </section>
     <section id="experience">
       <h2>Work Experience</h2>
-      <div class="exp1">
-        <h3>Junior Frontend Associate at Aiueo</h3>
-        <p>Maintained and developed scalable architecture</p>
-      </div>
-      <div class="exp1">
-        <h3>Senior Frontend Associate at Aiueo</h3>
-        <p>Delegated tasks and break down problems</p>
-      </div>
-      <div class="exp1">
-        <h3>Cleaning Service at Nasa</h3>
-        <p>Refactored codes to make it clean</p>
-      </div>
+      <article class="exp1">
+        <h3>Junior Frontend Associate at Unaitee</h3>
+        <p>
+          Developed and maintained responsive user interfaces for web
+          applications, ensuring cross-browser compatibility. Contributed to the
+          development of a scalable component library.
+        </p>
+        <time datetime="2020-01-01">Jan 2020</time> -
+        <time datetime="2021-12-31">Dec 2021</time>
+      </article>
+      <article class="exp1">
+        <h3>Senior Frontend Associate at Unaitee</h3>
+        <p>
+          Led a team of junior developers, delegating tasks and providing
+          mentorship. Implemented performance optimizations and refactored
+          legacy code to improve application speed and maintainability.
+        </p>
+        <time datetime="2022-01-01">Jan 2022</time> -
+        <time datetime="2023-12-31">Dec 2023</time>
+      </article>
+      <article class="exp1">
+        <h3>Cleaning Service at NASA</h3>
+        <p>
+          Collaborated with a team to ensure the cleanliness and organization of
+          critical laboratory spaces. Implemented a new cleaning protocol that
+          reduced cleaning time by 15%.
+        </p>
+        <time datetime="2024-01-01">Jan 2024</time> -
+        <time datetime="2024-Present">Present</time>
+      </article>
     </section>
     <section id="message">
       <h2>Get in touch!</h2>
       <form action="#">
         <label for="Send me a message"></label>
-        <input type="text" name="contact" id="contact" />
+        <textarea
+          name="msg"
+          id="msg"
+          placeholder="Hey! I'm interested to..."
+        ></textarea>
         <button>Send</button>
       </form>
     </section>
-    <footer></footer>
     <footer>
-      <p>Copyright © 2025 All rights reserved | John Smith</p>
+      <p>Copyright &copy; 2025 All rights reserved | John Smith</p>
     </footer>
   </body>
 </html>
