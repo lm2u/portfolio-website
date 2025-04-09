@@ -12,11 +12,42 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Website Portfolio</title>
+    <script src="./nav.js" defer></script>
   </head>
   <body>
     <main>
       <section class="section hero">
-        <nav class="nav">
+        <nav class="navbar">
+          <div class="menu-toggle" id="mobile-menu">☰</div>
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#skills">Skills</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Sass</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#projects">Projects</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Design Portfolio</a></li>
+                <li><a href="#">E-Learning Landing Page</a></li>
+                <li><a href="#">Todo Web App</a></li>
+                <li><a href="#">Entertainment Web App</a></li>
+                <li><a href="#">Memory Game</a></li>
+                <li><a href="#">Art Gallery Showcase</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- <nav class="nav">
           <div class="nav__logo">mariopatuh</div>
           <ul class="nav__list">
             <li class="nav__item">
@@ -29,7 +60,7 @@
               <a class="nav__links" href="#contact">contact</a>
             </li>
           </ul>
-        </nav>
+        </nav> -->
 
         <div class="hero__content">
           <div class="hero__avatar">

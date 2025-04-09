@@ -581,3 +581,77 @@ footer > .nav {
     margin: 0 auto;
   }
 }
+
+/* Nav */
+
+.navbar {
+  background: #333;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #444;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #333;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}
