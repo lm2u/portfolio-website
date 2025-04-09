@@ -588,12 +588,14 @@ footer > .nav {
   background: #333;
   padding: 10px 20px;
   position: relative;
+  margin-bottom: 1em;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-list li {
@@ -621,6 +623,9 @@ footer > .nav {
   top: 100%;
   left: 0;
   min-width: 150px;
+  z-index: 100;
+  list-style-type: none;
+  padding-left: 1em;
 }
 
 .dropdown-menu li a {
@@ -629,6 +634,10 @@ footer > .nav {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.drp-child:hover {
+  color: rgb(78, 225, 160);
 }
 
 @media (max-width: 768px) {
